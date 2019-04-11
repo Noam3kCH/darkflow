@@ -75,7 +75,7 @@ def camera(self):
         assert os.path.isfile(file), \
         'file {} does not exist'.format(file)
         
-    camera = cv2.VideoCapture(file)
+    camera = cv2.VideoCapture(1)
     
     if file == 0:
         self.say('Press [ESC] to quit demo')

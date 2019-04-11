@@ -56,11 +56,14 @@ def postprocess(self, net_out, im, save = True):
 			colors[max_indx], thick)
 		cv2.putText(imgcv, mess, (left, top - 12),
 			0, 1e-3 * h, colors[max_indx],thick//3)
-
+	
+	print(json.dumps(resultsForJSON, indent=4, sort_keys=True))
+	print('resultsForJSON')
 	if not save: return imgcv
 
 	outfolder = os.path.join(self.FLAGS.imgdir, 'out')
 	img_name = os.path.join(outfolder, os.path.basename(im))
+
 	if self.FLAGS.json:
 		textJSON = json.dumps(resultsForJSON)
 		textFile = os.path.splitext(img_name)[0] + ".json"

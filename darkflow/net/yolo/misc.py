@@ -5,8 +5,7 @@ import os
 
 labels20 = ["aeroplane", "bicycle", "bird", "boat", "bottle",
     "bus", "car", "cat", "chair", "cow", "diningtable", "dog",
-    "horse", "motorbike", "person", "pottedplant", "sheep", "sofa",
-    "train", "tvmonitor"]
+    "horse", "motorbike", "person"]
 
 # 8, 14, 15, 19
 
